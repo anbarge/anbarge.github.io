@@ -48,7 +48,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
             >
               {
                 <LazyImage
-                  src="custom-avatar.png"
+                  src="anb.jpeg"
                   alt={profile.name}
                   placeholder={skeleton({
                     widthCls: 'w-full',
