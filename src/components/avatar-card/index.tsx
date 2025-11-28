@@ -1,7 +1,8 @@
-import { FALLBACK_IMAGE } from '../../constants';
+import anbImage from './anb.jpeg';
 import { Profile } from '../../interfaces/profile';
 import { skeleton } from '../../utils';
 import LazyImage from '../lazy-image';
+
 
 interface AvatarCardProps {
   profile: Profile | null;
@@ -48,7 +49,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
             >
               {
                 <LazyImage
-                  src="anb.jpeg"
+                  src={anbImage}
                   alt={profile.name}
                   placeholder={skeleton({
                     widthCls: 'w-full',
